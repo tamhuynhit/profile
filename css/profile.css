@@ -21,6 +21,10 @@ body {
     margin: 0;
 }
 
+.full-height {
+    height: 100%;
+}
+
 h1,
 h2,
 h3 {
@@ -39,7 +43,7 @@ h2 {
 }
 
 a {
-    color: var(--accent-dark-color);
+    color: var(--accent-light-color);
     text-decoration: none;
     transition: all 0.5s;
 }
@@ -48,6 +52,19 @@ a:hover {
     color: var(--theme-color);
     border-color: var(--theme-color);
     text-decoration: none;
+}
+
+hr {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: block;
+    border: 0;
+    height: 1px;
+}
+
+hr.fade-edge {
+    background-image: linear-gradient(to right, rgba(67, 160, 71, 0), rgba(67, 160, 71, 0.75), rgba(67, 160, 71, 0));
+    width: 80%;
 }
 
 .container-fluid {
@@ -59,7 +76,7 @@ a:hover {
     height: 100%;
 }
 
-.container-fluid > .row {
+.container-fluid>.row {
     height: 100%;
 }
 
@@ -93,37 +110,36 @@ a:hover {
     }
 }
 
-#aside-name-container > h2 {
+#aside-name-container>h2 {
     margin-top: 8px;
 }
 
 #aside-avatar {
     margin: 18px 0;
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     border: 3px solid rgba(255, 255, 255, 0.4);
 }
 
-#aside-social-container {
-    margin-top: 32px;
-    margin-bottom: 16px;
+#aside-container nav {
+    margin: 32px 0 16px 0;
 }
 
-#aside-social-container li {
+#aside-container nav li {
     display: inline;
 }
 
-#aside-social-container ul {
+#aside-container nav ul {
     padding: 0;
 }
 
-#aside-social-container li a {
+#aside-container nav li a {
     color: white;
     padding: 8px;
 }
 
-#aside-social-container li a:hover {
-    color: var(--accent-dark-color);
+#aside-container nav li a:hover {
+    color: var(--accent-light-color);
 }
 
 
@@ -131,11 +147,12 @@ a:hover {
 
 #content-container {
     background: #C8E6C9;
-    padding: 16px;
+    padding: 22px;
+    overflow: auto;
 }
 
 #content-container .section-wrapper {
-    margin-top: 32px;
+    margin: 32px 0;
 }
 
 #content-container .section-wrapper .row div {
@@ -163,11 +180,12 @@ a:hover {
 
 #section-about ul {
     padding-left: 0;
+    margin: 0;
 }
 
 #section-about li {
     display: block;
-    margin: 12px 0;
+    margin-top: 16px;
 }
 
 #section-about li a {
@@ -190,5 +208,6 @@ a:hover {
 
 .progress-bar {
     background-color: var(--accent-light-color);
+    border-right: 1px solid var(--accent-dark-color);
     font-size: 16px;
 }
