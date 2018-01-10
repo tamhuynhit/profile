@@ -34,11 +34,16 @@ h3 {
 
 h1 {
     font-weight: 800;
-    font-size: 30px;
+    font-size: 32px;
 }
 
 h2 {
     font-weight: 400;
+    font-size: 20px;
+}
+
+h3 {
+    font-weight: 300;
     font-size: 18px;
 }
 
@@ -81,7 +86,7 @@ hr.fade-edge {
 }
 
 .margin-top {
-    margin-top: 18px;
+    margin-top: 20px;
 }
 
 .no-padding {
@@ -152,7 +157,7 @@ hr.fade-edge {
 }
 
 #content-container .section-wrapper {
-    margin: 32px 0;
+    margin: 48px 0 20px 0;
 }
 
 #content-container .section-wrapper .row div {
@@ -170,6 +175,9 @@ hr.fade-edge {
     line-height: 40px;
     margin: 0;
 }
+
+
+/* Content: About */
 
 #cv-download-container a {
     text-align: center;
@@ -196,6 +204,9 @@ hr.fade-edge {
     padding-left: 12px;
 }
 
+
+/* Content: Skill */
+
 .skill-wrapper h2 {
     line-height: 40px;
 }
@@ -210,4 +221,87 @@ hr.fade-edge {
     background-color: var(--accent-light-color);
     border-right: 1px solid var(--accent-dark-color);
     font-size: 16px;
+}
+
+.skill-item .skill-primary-info .company-logo {
+    float: left;
+}
+
+img.company-logo {
+    width: 48px;
+    height: 48px;
+    float: left;
+}
+
+.skill-item .skill-primary-info {
+    margin-top: 8px;
+    margin-left: 60px;
+    text-align: justify;
+}
+
+.skill-item .skill-primary-info h3 {
+    text-transform: none;
+    margin-top: 8px;
+}
+
+.skill-item .skill-primary-info h2 span {
+    margin-left: 12px;
+}
+
+.skill-item .skill-primary-info .skill-position {
+    font-size: 22px;
+}
+
+.skill-item .company-product h3 {
+    margin-top: 8px;
+    margin-right: 16px;
+    text-transform: none;
+}
+
+.skill-item .company-product ul {
+    list-style-type: none;
+    margin: 8px 0 0 0;
+}
+
+.skill-item .company-product ul li:before {
+    content: "–";
+    margin-right: 6px;
+}
+
+.skill-item .company-product ul li {
+    margin-bottom: 4px;
+    line-height: 24px;
+}
+
+.skill-item .product-logo {
+    width: 28px;
+    height: 28px;
+}
+
+.skill-item .product-download {
+    margin-left: 18px;
+    margin-top: 8px;
+}
+
+.skill-item .product-download-logo {
+    width: auto;
+    height: 24px;
+}
+
+.skill-item .company-product {
+    margin-left: 60px;
+}
+
+.skill-item .skill-secondary-info {
+    margin-left: 40px;
+}
+
+@media all and (max-width: 991px) {
+    .skill-item .skill-secondary-info {
+        margin-left: 0px;
+    }
+
+    .skill-item .company-product {
+        margin-left: 0px;
+    }
 }
