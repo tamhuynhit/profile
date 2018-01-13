@@ -89,6 +89,10 @@ hr.fade-edge {
     margin-top: 20px;
 }
 
+.no-margin {
+    margin: 0;
+}
+
 .no-padding {
     padding: 0;
 }
@@ -97,8 +101,6 @@ hr.fade-edge {
 /* Aside */
 
 #aside-container {
-    margin: 0;
-    padding: 0;
     text-align: center;
     color: #E0F2F1;
     overflow: auto;
@@ -152,7 +154,7 @@ hr.fade-edge {
 
 #content-container {
     background: #C8E6C9;
-    padding: 22px;
+    padding: 20px 20px 12px 20px;
     overflow: auto;
 }
 
@@ -171,9 +173,7 @@ hr.fade-edge {
 
 #content-container .section-wrapper p {
     text-align: justify;
-    font-size: 20px;
     line-height: 40px;
-    margin: 0;
 }
 
 
@@ -186,9 +186,12 @@ hr.fade-edge {
     border: 1px solid var(--accent-dark-color);
 }
 
+#section-about p {
+    font-size: 20px;
+}
+
 #section-about ul {
     padding-left: 0;
-    margin: 0;
 }
 
 #section-about li {
@@ -304,4 +307,11 @@ img.company-logo {
     .skill-item .company-product {
         margin-left: 0px;
     }
+}
+
+#copyright-content {
+    margin-top: 40px;
+    float: right;
+    font-weight: 200;
+    font-size: 10px;
 }
