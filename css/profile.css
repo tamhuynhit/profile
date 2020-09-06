@@ -117,6 +117,7 @@ hr.fade-edge {
     animation-delay: 0.8s;
 }
 
+
 /* Aside */
 
 #aside-container {
@@ -282,7 +283,7 @@ img.company-logo {
 
 .skill-item .company-product ul {
     list-style-type: none;
-    margin: 8px 0 0 0;
+    margin: 8px 0 0 8px;
 }
 
 .skill-item .company-product ul li:before {
@@ -291,18 +292,13 @@ img.company-logo {
 }
 
 .skill-item .company-product ul li {
-    margin-bottom: 4px;
+    margin-bottom: 12px;
     line-height: 24px;
 }
 
 .skill-item .product-logo {
     width: 28px;
     height: 28px;
-}
-
-.skill-item .product-download {
-    margin-left: 18px;
-    margin-top: 8px;
 }
 
 .skill-item .product-download-logo {
@@ -328,7 +324,6 @@ img.company-logo {
     .skill-item .skill-secondary-info {
         margin-left: 0px;
     }
-
     .skill-item .company-product {
         margin-left: 0px;
     }
