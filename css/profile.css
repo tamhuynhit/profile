@@ -127,6 +127,10 @@ hr.fade-edge {
     background-color: var(--theme-color)
 }
 
+#aside-container .aside-content.sticky {
+    position: absolute;
+}
+
 #aside-name-container {
     margin: 32px 0;
 }
