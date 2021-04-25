@@ -86,7 +86,7 @@ hr.fade-edge {
 }
 
 .margin-top {
-    margin-top: 20px;
+    margin-top: 24px;
 }
 
 .no-margin {
@@ -142,6 +142,10 @@ hr.fade-edge {
 }
 
 #aside-name-container>h2 {
+    margin-top: 16px;
+}
+
+#aside-name-container>h3 {
     margin-top: 8px;
 }
 
@@ -195,7 +199,13 @@ hr.fade-edge {
     font-weight: 300;
 }
 
-#content-container .section-wrapper p {
+
+/* #content-container .section-wrapper p {
+    text-align: justify;
+    line-height: 40px;
+} */
+
+#section-about p {
     text-align: justify;
     line-height: 40px;
 }
@@ -321,7 +331,11 @@ img.company-logo {
 }
 
 .skill-item .skill-secondary-info {
-    margin-left: 40px;
+    margin-left: 60px;
+}
+
+.skill-item .skill-secondary-info .fa-ul {
+    margin-left: 20px;
 }
 
 @media all and (max-width: 991px) {
