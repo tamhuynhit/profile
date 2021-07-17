@@ -4,6 +4,7 @@
     --theme-color: #004D40;
     --accent-dark-color: #43A047;
     --accent-light-color: #4CAF50;
+    --background-color: #C8E6C9;
 }
 
 body {
@@ -181,7 +182,7 @@ hr.fade-edge {
 /* Content */
 
 #content-container {
-    background: #C8E6C9;
+    background: var(--background-color);
     padding: 20px 20px 12px 20px;
     overflow: auto;
 }
@@ -260,10 +261,6 @@ hr.fade-edge {
     font-size: 16px;
 }
 
-.skill-item .skill-primary-info .company-logo {
-    float: left;
-}
-
 img.company-logo {
     width: 48px;
     height: 48px;
@@ -271,14 +268,19 @@ img.company-logo {
 }
 
 .skill-item .skill-primary-info {
-    margin-top: 8px;
+    padding-top: 8px;
     margin-left: 60px;
     text-align: justify;
 }
 
 .skill-item .skill-primary-info h3 {
     text-transform: none;
-    margin-top: 8px;
+    margin-top: 12px;
+}
+
+.skill-item .skill-primary-info h2 {
+    font-size: 24px;
+    text-transform: none;
 }
 
 .skill-item .skill-primary-info h2 span {
@@ -332,6 +334,9 @@ img.company-logo {
 
 .skill-item .skill-secondary-info {
     margin-left: 60px;
+    background-color: var(--background-color);
+    position: relative;
+    z-index: 10;
 }
 
 .skill-item .skill-secondary-info .fa-ul {
@@ -345,6 +350,28 @@ img.company-logo {
     .skill-item .company-product {
         margin-left: 0px;
     }
+    /* .timeline-dot::before { */
+    /* display: none; */
+    /* } */
+}
+
+.timeline-dot::before {
+    position: absolute;
+    left: 40px;
+    margin-top: 10px;
+    content: "";
+    border-radius: 500%;
+    background: var(--accent-dark-color);
+    height: 8px;
+    width: 8px;
+    transition: all 500ms ease-in-out;
+}
+
+.timeline {
+    border-left: 1px dashed var(--accent-light-color);
+    position: absolute;
+    left: 43px;
+    z-index: 0;
 }
 
 #copyright-content {
