@@ -1,10 +1,15 @@
 /* Common */
 
 :root {
-    --theme-color: #004D40;
+    /* --theme-color: #004D40;
     --accent-dark-color: #43A047;
     --accent-light-color: #4CAF50;
-    --background-color: #C8E6C9;
+    --background-color: #C8E6C9; */
+    /* Color Pallete: https://coolors.co/1f2421-216869-49a078-9cc5a1-dce1de */
+    --theme-color: #216869;
+    --accent-dark-color: var(--theme-color);
+    --accent-light-color: #49a078;
+    --background-color: #fff;
 }
 
 body {
@@ -12,7 +17,7 @@ body {
     background-color: #eeeeee;
     color: #333333;
     font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 24px;
     height: 100%;
@@ -123,7 +128,7 @@ hr.fade-edge {
 
 #aside-container {
     text-align: center;
-    color: #E0F2F1;
+    color: #fff;
     overflow: auto;
     background-color: var(--theme-color)
 }
@@ -183,7 +188,7 @@ hr.fade-edge {
 
 #content-container {
     background: var(--background-color);
-    padding: 20px 20px 12px 20px;
+    padding: 26px 26px 12px 26px;
     overflow: auto;
 }
 
@@ -256,7 +261,7 @@ hr.fade-edge {
 }
 
 .progress-bar {
-    background-color: var(--accent-light-color);
+    background-color: var(--accent-dark-color);
     border-right: 1px solid var(--accent-dark-color);
     font-size: 16px;
 }
@@ -357,7 +362,7 @@ img.company-logo {
 
 .timeline-dot::before {
     position: absolute;
-    left: 40px;
+    left: 46px;
     margin-top: 10px;
     content: "";
     border-radius: 500%;
@@ -370,7 +375,7 @@ img.company-logo {
 .timeline {
     border-left: 1px dashed var(--accent-light-color);
     position: absolute;
-    left: 43px;
+    left: 49px;
     z-index: 0;
 }
 
