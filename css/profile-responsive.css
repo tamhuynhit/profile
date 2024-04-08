@@ -1,0 +1,11 @@
+/* md size */
+@media (min-width: 768px) {
+    #content-container {
+        padding: 26px 26px 12px 26px;
+    }
+
+    .skill-item .company-product ul li:before {
+        content: "–";
+        margin-right: 6px;
+    }
+}

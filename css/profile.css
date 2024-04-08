@@ -188,7 +188,7 @@ hr.fade-edge {
 
 #content-container {
     background: var(--background-color);
-    padding: 26px 26px 12px 26px;
+    padding: 18px 12px 4px 12px;
     overflow: auto;
 }
 
@@ -304,12 +304,7 @@ img.company-logo {
 
 .skill-item .company-product ul {
     list-style-type: none;
-    margin: 8px 0 0 8px;
-}
-
-.skill-item .company-product ul li:before {
-    content: "–";
-    margin-right: 6px;
+    margin: 8px 0 0 0;
 }
 
 .skill-item .company-product ul li {
